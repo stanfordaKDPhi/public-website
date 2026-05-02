@@ -1,7 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import { sisterClassPublicDir, toFileSegment } from "./paths";
+import {
+  sisterClassPublicDir,
+  sisterPlaceholderPortrait,
+  toFileSegment,
+} from "./paths";
 import type { ClassMemberRecord } from "./types";
 
 const IMAGE_EXT = new Set([".jpg", ".jpeg", ".png", ".webp"]);
@@ -10,6 +14,7 @@ const IMAGE_EXT = new Set([".jpg", ".jpeg", ".png", ".webp"]);
  * Looks for `public/images/sisters/<slug>/<#>-firstname-lastname>.<ext>`
  * (any supported image ext, case-insensitive stem + extension).
  * If `imageExt` is set, that file is tried first when present.
+ * If nothing matches, returns `sisterPlaceholderPortrait` (`/images/sisters/akdphi-logo.png`).
  */
 export function discoverMemberPortraitSrc(
   slug: string,
@@ -35,7 +40,7 @@ export function discoverMemberPortraitSrc(
     return `${sisterClassPublicDir(slug)}/${found}`;
   }
 
-  return `${sisterClassPublicDir(slug)}/${base}.jpg`;
+  return sisterPlaceholderPortrait;
 }
 
 const EXT_ORDER = [".jpg", ".jpeg", ".png", ".webp"] as const;

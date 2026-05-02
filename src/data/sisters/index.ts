@@ -8,6 +8,7 @@ export type {
 export {
   memberPortraitPath,
   sisterClassPublicDir,
+  sisterPlaceholderPortrait,
   classHeroPath,
   toFileSegment,
 } from "./paths";

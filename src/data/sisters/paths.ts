@@ -5,6 +5,9 @@ export function sisterClassPublicDir(slug: string) {
   return `/images/sisters/${slug}`;
 }
 
+/** `public/images/sisters/akdphi-logo.png` — used when a member has no class portrait. */
+export const sisterPlaceholderPortrait = "/images/sisters/akdphi-logo.png";
+
 export function toFileSegment(name: string) {
   return name
     .trim()

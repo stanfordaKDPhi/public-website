@@ -25,6 +25,7 @@ function resolveMember(slug: string, m: ClassMemberRecord): ClassMemberBio {
     name,
     nickname: m.nickname,
     big: m.big,
+    little: m.little,
     majorMinor: m.majorMinor,
     talkToMeAbout: m.talkToMeAbout,
   };

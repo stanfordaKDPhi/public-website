@@ -16,6 +16,7 @@ export type ClassMemberRecord = {
   portraitOverride?: string;
   nickname?: string;
   big?: string;
+  little?: string;
   majorMinor?: string;
   talkToMeAbout?: string;
 };
@@ -36,6 +37,7 @@ export type ClassMemberBio = {
   name: string;
   nickname?: string;
   big?: string;
+  little?: string;
   majorMinor?: string;
   talkToMeAbout?: string;
 };

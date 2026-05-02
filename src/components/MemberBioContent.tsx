@@ -27,6 +27,7 @@ export function MemberBioFields({ member }: { member: ClassMemberBio }) {
         <BioBlock label="Nickname:" value={`"${member.nickname}"`} />
       ) : null}
       {member.big ? <BioBlock label="Big:" value={member.big} /> : null}
+      {member.little ? <BioBlock label="Little:" value={member.little} /> : null}
       {member.majorMinor ? (
         <BioBlock label="Major/Minor:" value={member.majorMinor} />
       ) : null}
