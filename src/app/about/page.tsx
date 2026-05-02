@@ -8,22 +8,19 @@ export const metadata: Metadata = {
 };
 
 const boardCabinet2026 = [
-  { role: "President", names: "Emily Lim" },
-  { role: "Vice President of Internal Affairs", names: "Katy Zhang" },
-  { role: "Vice President of External Affairs", names: "Lauren Yu" },
+  { role: "President", names: "Angie Zhang" },
+  { role: "Vice President of Internal Affairs", names: "Nancy Zhang" },
+  { role: "Vice President of External Affairs", names: "Katy Zhang" },
   { role: "Vice President of Service", names: "Angela Zhang" },
-  { role: "New Member Educators", names: "Priyanka Gupta and Sarah Jacob" },
-  { role: "Secretary", names: "Erika Li" },
-  { role: "Treasurers", names: "Alison Kim and Myan Ngo" },
-  { role: "Rush Chairs", names: "Alice Chen and An Doan" },
-  { role: "Sisterhood Chairs", names: "Alyna Lu and Angelina Zhang" },
-  { role: "Alumnae Relations Chair", names: "Lauren Yu" },
-  { role: "Cultural Chairs", names: "Alyna Lu and Myan Ngo" },
-  { role: "Publicity Chair", names: "Sherry Yan" },
-  {
-    role: "Fundraising Chair",
-    names: "Angelina Zhang and Ninjin 'Jinnie' Bayarjargal",
-  },
+  { role: "New Member Educators", names: "Lauren Yu, Ally Kim and Emily Lim" },
+  { role: "Secretary", names: "Alyna Lu" },
+  { role: "Treasurers", names: "Hallie Xu" },
+  { role: "Rush Chairs", names: "Myan Ngo and Christina Duong" },
+  { role: "Sisterhood Chairs", names: "Iona Xia and Jolie Li" },
+  { role: "Alumnae Relations Chair", names: "Gabi Guidero" },
+  { role: "Cultural Chairs", names: "Luluka Aibyek and Grace Zhao" },
+  { role: "Publicity Chair", names: "Emily Lim" },
+  { role: "Fundraising Chair", names: "Erika Li" },
 ] as const;
 
 export default function AboutPage() {

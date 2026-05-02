@@ -4,15 +4,15 @@ export default function Home() {
   return (
     <section className="relative min-h-[min(72vh,820px)] w-full flex-1">
       <Image
-        src="/hero.jpg"
-        alt="Stanford aKDPhi sisters on campus"
+        src="/images/photos/aKDPhi2026_Founders_Day_Photoshoot_02.JPEG"
+        alt="Stanford aKDPhi sisters at Founders Day in front of a campus archway"
         fill
         priority
-        className="object-cover object-[center_42%]"
+        className="object-cover object-[55%_bottom]"
         sizes="100vw"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-black/20"
         aria-hidden
       />
       <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-14 text-center sm:pb-20">

@@ -18,7 +18,7 @@ const sans = DM_Sans({
 
 const siteBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-const crestIcon = `${siteBasePath}/aKDPhi_Logo_Crest_DarkPurple_Digital.webp`;
+const crestIcon = `${siteBasePath}/brand/logos/aKDPhi_Logo_Crest_DarkPurple_Digital.webp`;
 
 export const metadata: Metadata = {
   title: "Stanford aKDPhi | alpha Kappa Delta Phi — Zeta Chapter",
