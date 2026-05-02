@@ -10,8 +10,7 @@ export default function EventsPage() {
   return (
     <PageShell title="Events">
       <p>
-        List philanthropy, socials, info sessions, and other events here. This
-        placeholder is ready for your calendar or event cards.
+        Check back later to see the list of events we've hosted in the past, and upcoming ones!
       </p>
     </PageShell>
   );
