@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      # Custom domains (e.g. stanfordakdphi.org) are served at /. Set repo variable
+      # USE_GITHUB_PAGES_SUBPATH to false so the static build does not use /repo-name.
+      - name: Resolve site base path
+        id: base
+        shell: bash
+        run: |
+          if [ "${{ vars.USE_GITHUB_PAGES_SUBPATH }}" = "false" ]; then
+            echo "path=" >> "$GITHUB_OUTPUT"
+            echo "Root build: USE_GITHUB_PAGES_SUBPATH=false (custom domain)."
+            exit 0
+          fi
+          name="${{ github.event.repository.name }}"
+          if [[ "$name" == *.github.io ]]; then
+            echo "path=" >> "$GITHUB_OUTPUT"
+            echo "Using root URL (repository name ends with .github.io)."
+          else
+            echo "path=/$name" >> "$GITHUB_OUTPUT"
+            echo "Using default GitHub Pages project URL base: /$name"
+          fi
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.base.outputs.path }}
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

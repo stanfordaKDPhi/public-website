@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/*
+ * Design system: public-website/DESIGN_TOKENS.md
+ * Commercial fonts (Eckhart, Greycliff, eloved, Trivia): add @font-face, then wire CSS vars below.
+ */
+
+@theme inline {
+  --color-compassion: #5a357f;
+  --color-sisterhood: #b577bc;
+  --color-leadership: #ccbde5;
+  --color-service: #ede9f4;
+  --color-purpose: #ffffff;
+  --color-friendship: #fcdedd;
+  --color-authenticity: #ffd080;
+  --color-scholarship: #bbd8d0;
+  --color-integrity: #1c3360;
+
+  --color-background: var(--color-purpose);
+  --color-foreground: var(--color-integrity);
+
+  --font-sans: var(--font-sans-nav), system-ui, sans-serif;
+}
+
+:root {
+  /* Header nav — neutral grays (match reference; not palette purples) */
+  --nav-muted: #7a7a7a;
+  --nav-active-fg: #3d3d3d;
+  --nav-active-bg: #e8e8e8;
+  --rule: #d8d8d8;
+
+  --background: var(--color-purpose);
+  --foreground: var(--color-integrity);
+
+  --brand-purple: var(--color-compassion);
+
+  /* Bold loaded via @font-face in layout.tsx — add public/fonts/EckhartHeadline-Bold.woff2 */
+  --font-display-headline: "Eckhart Headline", var(--font-serif), ui-serif, serif;
+  --font-script-display: "eloved Script", "Brush Script MT", cursive;
+  --font-body-named: "Greycliff CF", var(--font-sans-nav), system-ui, sans-serif;
+  --font-greek-sans: "Trivia Sans", var(--font-sans-nav), system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body-named);
+}
+
+/** Site wordmark — Eckhart Headline Bold (woff2 in public/fonts/) */
+.font-site-title {
+  font-family: var(--font-display-headline);
+  font-weight: 700;
+}
