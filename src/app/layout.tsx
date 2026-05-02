@@ -55,7 +55,10 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-white text-neutral-900">
         <SiteHeader />
-        <main className="flex min-h-0 flex-1 flex-col">{children}</main>
+        {/* Offset for `fixed` header — mobile stack is taller than single-row `sm+`. */}
+        <main className="flex min-h-0 flex-1 flex-col pt-[7.25rem] sm:pt-16">
+          {children}
+        </main>
       </body>
     </html>
   );
