@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans, GFS_Didot } from "next/font/google";
+import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
@@ -48,7 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${serif.variable} ${sans.variable} h-full antialiased`}
+      className={`${serif.variable} ${sans.variable} h-full min-h-dvh bg-[var(--color-purpose)] antialiased`}
     >
       <head>
         <style dangerouslySetInnerHTML={{ __html: eckhartHeadlineFontFace }} />
@@ -59,6 +60,7 @@ export default function RootLayout({
         <main className="flex min-h-0 flex-1 flex-col pt-[7.25rem] sm:pt-16">
           {children}
         </main>
+        <SiteFooter />
       </body>
     </html>
   );
