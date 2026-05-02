@@ -96,6 +96,13 @@ export function MemberFlipCard({ member }: { member: ClassMemberBio }) {
                     #{member.lineNumber}
                   </p>
                 ) : null}
+                {member.classYear ? (
+                  <p
+                    className={`mt-1 text-[0.7rem] font-medium leading-tight sm:text-xs ${frontCaption}`}
+                  >
+                    {member.classYear}
+                  </p>
+                ) : null}
               </div>
             </div>
             <p className="shrink-0 pb-2 text-center text-[0.6rem] font-medium tracking-wide text-[var(--color-compassion)]/70 sm:text-[0.65rem]">
@@ -108,11 +115,18 @@ export function MemberFlipCard({ member }: { member: ClassMemberBio }) {
             className={`absolute inset-0 flex flex-col overflow-hidden [backface-visibility:hidden] [transform:rotateY(180deg)] ${polaroidFrame}`}
           >
             <div className="flex min-h-0 flex-1 flex-col bg-[var(--color-service)] px-3 pb-2 pt-4 sm:px-4 sm:pt-5">
-              <p
-                className={`shrink-0 border-b border-[var(--color-compassion)]/12 pb-2.5 text-center text-[0.95rem] font-semibold sm:text-base ${captionSans}`}
-              >
-                {member.name}
-              </p>
+              <div className="shrink-0 border-b border-[var(--color-compassion)]/12 pb-2.5 text-center">
+                <p
+                  className={`text-[0.95rem] font-semibold sm:text-base ${captionSans}`}
+                >
+                  {member.name}
+                </p>
+                {member.classYear ? (
+                  <p className="mt-1 text-xs font-medium text-neutral-600 sm:text-sm">
+                    {member.classYear}
+                  </p>
+                ) : null}
+              </div>
               <div className="min-h-0 flex-1 overflow-y-auto py-3 pr-0.5 sm:py-4">
                 <MemberBioFields member={member} />
               </div>

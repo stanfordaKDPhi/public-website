@@ -28,6 +28,7 @@ function resolveMember(slug: string, m: ClassMemberRecord): ClassMemberBio {
     little: m.little,
     majorMinor: m.majorMinor,
     talkToMeAbout: m.talkToMeAbout,
+    classYear: m.classYear,
   };
 }
 

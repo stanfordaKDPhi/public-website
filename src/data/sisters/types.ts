@@ -19,6 +19,8 @@ export type ClassMemberRecord = {
   little?: string;
   majorMinor?: string;
   talkToMeAbout?: string;
+  /** e.g. "Class of 2025" — shown on card when set. */
+  classYear?: string;
 };
 
 export type SisterClassPageDef = {
@@ -40,6 +42,7 @@ export type ClassMemberBio = {
   little?: string;
   majorMinor?: string;
   talkToMeAbout?: string;
+  classYear?: string;
 };
 
 export type SisterClassPageData = {

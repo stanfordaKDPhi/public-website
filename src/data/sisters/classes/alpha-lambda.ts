@@ -1,8 +1,10 @@
 import type { SisterClassPageDef } from "../types";
 
 /**
- * Add `public/images/sisters/alpha-lambda/alpha-lambda-group.jpg` (or update
- * `heroImageFile`) and member portraits `283-alice-kim.*`, `284-krystal-li.*`, etc.
+ * Portraits: `public/images/sisters/alpha-lambda/<#>-firstname-lastname.*`
+ * (see `discoverPortrait.ts`). Hero: `alpha-lambda-group.jpg` or update `heroImageFile`.
+ *
+ * Lines **#266–#280** live under **Alpha Iota** (`alpha-iota.ts`).
  */
 export const alphaLambdaClassPage: SisterClassPageDef = {
   heroImageFile: "alpha-lambda-group.jpg",
