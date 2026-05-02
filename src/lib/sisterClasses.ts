@@ -1,20 +1,16 @@
-/** “Alpha {Greek letter} Class”; slugs live under `/sisters/`. */
+/**
+ * “Alpha {Greek letter} Class” — route slugs under `/sisters/<slug>/`.
+ * Page copy and rosters live in `src/data/sisters/classes/<slug>.ts` (see `registry.ts`).
+ * Images: `public/images/sisters/<slug>/` (hero + `#-firstname-lastname` portraits: `.jpg`, `.jpeg`, `.png`, or `.webp` — detected at build).
+ */
 const GREEK_THROUGH_OMICRON = [
-  "Alpha",
-  "Beta",
-  "Gamma",
-  "Delta",
-  "Epsilon",
-  "Zeta",
-  "Eta",
-  "Theta",
   "Iota",
   "Kappa",
   "Lambda",
   "Mu",
   "Nu",
   "Xi",
-  "Omicron",
+  "Omicron",  
 ] as const;
 
 function toSlug(segment: string) {
