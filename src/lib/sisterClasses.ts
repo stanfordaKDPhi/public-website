@@ -10,7 +10,6 @@ const GREEK_THROUGH_OMICRON = [
   "Mu",
   "Nu",
   "Xi",
-  "Omicron",  
 ] as const;
 
 function toSlug(segment: string) {

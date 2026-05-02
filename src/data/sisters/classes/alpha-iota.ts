@@ -4,7 +4,8 @@ import type { SisterClassPageDef } from "../types";
  * Portraits: `public/images/sisters/alpha-iota/<#>-firstname-lastname.*`
  * (see `discoverPortrait.ts`). Hero: `alpha-iota-group.jpg` or update `heroImageFile`.
  *
- * Michelle Buyan is line **#280** so **#277** can be Claire Yu (per chapter roster).
+ * Roster includes sisters beyond the chapter spreadsheet summary; sheet fields
+ * (e.g. class year, status, big/little) are merged in where they apply.
  */
 export const alphaIotaClassPage: SisterClassPageDef = {
   heroImageFile: "alpha-iota-group.jpg",
@@ -16,10 +17,25 @@ export const alphaIotaClassPage: SisterClassPageDef = {
       firstName: "Ninjin 'Jinnie'",
       lastName: "Bayarjargal",
       nickname: "Strawberry Milk",
+      classYear: "Class of 2026",
+      status: "Associate",
       big: "Maiya \"Honey Oolong\" Mao",
+      little: "Casey \"Mango Mochi\" Hood and Nicole \"Matcha Sprout\" Nguyen",
       majorMinor: "Psychology and Philosophy",
       talkToMeAbout:
         "Laufey and other music, education, YouTube video essays, and theater",
+    },
+    {
+      lineNumber: 267,
+      firstName: "Michelle",
+      lastName: "Buyan",
+      nickname: "Thai Tea",
+      classYear: "Class of 2026",
+      status: "Associate",
+      big: "Maiya \"Honey Oolong\" Mao",
+      little: "Nancy \"Peach Vibe\" Zhang",
+      majorMinor: "Symbolic Systems",
+      talkToMeAbout: "Cats, pho, and slow runs",
     },
     {
       lineNumber: 268,
@@ -72,8 +88,10 @@ export const alphaIotaClassPage: SisterClassPageDef = {
       firstName: "Myan",
       lastName: "Ngo",
       nickname: "Myan Thee Stallion",
+      classYear: "Class of 2026",
+      status: "Associate",
       big: "Sarah \"S-Hope\" Jacob",
-      little: "Jasmine \"Lil Jas X\" Lo and Grace \"Cardi G\" Zhao",
+      little: "Grace \"Cardi G\" Zhao and Jasmine \"Lil Jas X\" Lo",
       majorMinor: "Computer Science",
       talkToMeAbout:
         "Baking, cooking, your favorite foods, tattoos, and gym",
@@ -104,6 +122,8 @@ export const alphaIotaClassPage: SisterClassPageDef = {
       firstName: "Lauren",
       lastName: "Yu",
       nickname: "Little Miss Dreamy",
+      classYear: "Class of 2026",
+      status: "Active",
       big: "An \"Little Miss Azure\" Doan",
       little:
         "Alice \"Little Miss Chic\" Kim and Iona \"Little Miss Chill (Guy)\" Xia",
@@ -115,21 +135,13 @@ export const alphaIotaClassPage: SisterClassPageDef = {
       firstName: "Sofia",
       lastName: "Zhao",
       nickname: "Soflo Milli",
+      classYear: "Class of 2026",
+      status: "Associate",
       big: "Lyanne \"Agust Ly\" Pineda",
       little: "Katy \"KAY$HA\" Zhang",
       majorMinor: "Economics",
       talkToMeAbout:
         "Best food spots in the area, music, econ and finance careers, and gymming",
-    },
-    {
-      lineNumber: 280,
-      firstName: "Michelle",
-      lastName: "Buyan",
-      nickname: "Thai Tea",
-      big: "Maiya \"Honey Oolong\" Mao",
-      little: "Nancy \"Peach Vibe\" Zhang",
-      majorMinor: "Symbolic Systems",
-      talkToMeAbout: "Cats, pho, and slow runs",
     },
   ],
 };

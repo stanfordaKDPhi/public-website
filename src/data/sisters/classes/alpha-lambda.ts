@@ -3,18 +3,21 @@ import type { SisterClassPageDef } from "../types";
 /**
  * Portraits: `public/images/sisters/alpha-lambda/<#>-firstname-lastname.*`
  * (see `discoverPortrait.ts`). Hero: `alpha-lambda-group.jpg` or update `heroImageFile`.
- *
- * Lines **#266–#280** live under **Alpha Iota** (`alpha-iota.ts`).
+ * Lines **#266–#279** (and related) also appear on **Alpha Iota**; **#280–#281** on **Alpha Kappa**.
  */
 export const alphaLambdaClassPage: SisterClassPageDef = {
   heroImageFile: "alpha-lambda-group.jpg",
-  rushTerm: "Spring 2025",
+  rushTerm: "Spring 2024",
   heroTitle: "Alpha Lambda",
   members: [
     {
       lineNumber: 283,
       firstName: "Alice",
       lastName: "Kim",
+      nickname: "Little Miss Chic",
+      classYear: "Class of 2027",
+      status: "Inactive",
+      big: "Lauren \"Little Miss Dreamy\" Yu",
     },
     {
       lineNumber: 284,
@@ -31,6 +34,8 @@ export const alphaLambdaClassPage: SisterClassPageDef = {
       firstName: "Erika",
       lastName: "Li",
       nickname: "Lily of the Valley",
+      classYear: "Class of 2027",
+      status: "Active",
       big: "Lianne \"Buttercup\" Cha",
       little: "Jolie \"Bellflower\" Li",
       majorMinor: "Computer Science",
@@ -42,6 +47,8 @@ export const alphaLambdaClassPage: SisterClassPageDef = {
       firstName: "Emily",
       lastName: "Lim",
       nickname: "Mugunghwa",
+      classYear: "Class of 2027",
+      status: "Active",
       big: "Sofia \"Primrose\" Kim",
       majorMinor: "Theater and Performance Studies and Psychology",
       talkToMeAbout:
@@ -52,6 +59,8 @@ export const alphaLambdaClassPage: SisterClassPageDef = {
       firstName: "Alyna",
       lastName: "Lu",
       nickname: "Piña Colada",
+      classYear: "Class of 2026",
+      status: "Active",
       big: "Katherine \"AGT (Arizona Green Tea)\" Wong",
       little: "Gabi \"Fruit Punch\" Guidero",
       majorMinor: "Economics",
@@ -73,7 +82,10 @@ export const alphaLambdaClassPage: SisterClassPageDef = {
       firstName: "Angelina",
       lastName: "Zhang",
       nickname: "K.A.M.E.",
+      classYear: "Class of 2027",
+      status: "Inactive",
       big: "Heather \"H.A.T.O.\" Nolte",
+      little: "Angela \"H.E.B.I.\" Yang",
       majorMinor:
         "Mechanical Engineering, Computer Science and Music Minor",
       talkToMeAbout:
@@ -84,7 +96,10 @@ export const alphaLambdaClassPage: SisterClassPageDef = {
       firstName: "Katy",
       lastName: "Zhang",
       nickname: "KAY$HA",
+      classYear: "Class of 2027",
+      status: "Active",
       big: "Sofia \"Soflo Milli\" Zhao",
+      little: "Bianca \"Baby Beam\" Chan",
       majorMinor: "Economics and Sociology",
       talkToMeAbout:
         "Traveling, volunteering, watching soccer, and exploring new restaurants",

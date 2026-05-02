@@ -14,7 +14,10 @@ export const alphaMuClassPage: SisterClassPageDef = {
       firstName: "Sidney",
       lastName: "Suh",
       nickname: "Sid-K",
+      classYear: "Class of 2026",
+      status: "Inactive",
       big: "Isabel \"A$AP Pocky\" Mercado",
+      little: "Clara \"Chief Wang\" Wang",
       majorMinor: "Political Science",
       talkToMeAbout:
         "Sci-Fi books/movies, K-Dramas, K-Hip Hop and R&B, and salt water taffy",
@@ -24,6 +27,8 @@ export const alphaMuClassPage: SisterClassPageDef = {
       firstName: "Lizzie",
       lastName: "Tamor",
       nickname: "The Notorious L.I.Z.",
+      classYear: "Class of 2027",
+      status: "Inactive",
       big: "Alison \"Missy Alliott\" Kim",
       majorMinor: "Biology, Psychology Minor",
       talkToMeAbout:
@@ -34,7 +39,10 @@ export const alphaMuClassPage: SisterClassPageDef = {
       firstName: "Iona",
       lastName: "Xia",
       nickname: "Little Miss Chill (Guy)",
+      classYear: "Class of 2027",
+      status: "Active",
       big: "Lauren \"Little Miss Dreamy\" Yu",
+      little: "Joy \"Little Miss Stardust\" Cao",
       majorMinor: "Computer Science and Economics",
       talkToMeAbout:
         "Watching figure skating, TV shows, and Gracie Abrams",
@@ -44,6 +52,8 @@ export const alphaMuClassPage: SisterClassPageDef = {
       firstName: "Hallie",
       lastName: "Xu",
       nickname: "Haylani",
+      classYear: "Class of 2027",
+      status: "Active",
       big: "Alison \"Missy Alliott\" Kim",
       majorMinor: "Symbolic Systems",
       talkToMeAbout:

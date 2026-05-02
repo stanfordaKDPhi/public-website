@@ -21,6 +21,8 @@ export type ClassMemberRecord = {
   talkToMeAbout?: string;
   /** e.g. "Class of 2025" — shown on card when set. */
   classYear?: string;
+  /** e.g. "Active", "Associate", "Inactive" — from chapter roster when set. */
+  status?: string;
 };
 
 export type SisterClassPageDef = {
@@ -43,6 +45,7 @@ export type ClassMemberBio = {
   majorMinor?: string;
   talkToMeAbout?: string;
   classYear?: string;
+  status?: string;
 };
 
 export type SisterClassPageData = {
