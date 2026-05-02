@@ -13,8 +13,7 @@ export default function SistersPage() {
   return (
     <PageShell title="Sisters">
       <p>
-        Browse each class below. Add roster photos, composites, and highlights
-        on the individual class pages.
+      All of our akDPhi classes!
       </p>
       <ul className="mt-8 grid gap-2 sm:grid-cols-2">
         {sisterClasses.map(({ slug, label }) => (
