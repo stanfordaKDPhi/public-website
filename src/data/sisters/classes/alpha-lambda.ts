@@ -2,11 +2,11 @@ import type { SisterClassPageDef } from "../types";
 
 /**
  * Portraits: `public/images/sisters/alpha-lambda/<#>-firstname-lastname.*`
- * (see `discoverPortrait.ts`). Hero: `alpha-lambda-group.jpg` or update `heroImageFile`.
+ * (see `discoverPortrait.ts`). Hero filename must match disk exactly (case-sensitive on GitHub Pages).
  * Lines **#266–#279** (and related) also appear on **Alpha Iota**; **#280–#281** on **Alpha Kappa**.
  */
 export const alphaLambdaClassPage: SisterClassPageDef = {
-  heroImageFile: "alpha-lambda-group.jpg",
+  heroImageFile: "alpha-lambda-group.JPG",
   rushTerm: "Spring 2024",
   heroTitle: "Alpha Lambda",
   members: [

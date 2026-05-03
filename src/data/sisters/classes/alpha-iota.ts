@@ -2,13 +2,13 @@ import type { SisterClassPageDef } from "../types";
 
 /**
  * Portraits: `public/images/sisters/alpha-iota/<#>-firstname-lastname.*`
- * (see `discoverPortrait.ts`). Hero: `alpha-iota-group.jpg` or update `heroImageFile`.
+ * (see `discoverPortrait.ts`). Hero file must match `heroImageFile` exactly (case-sensitive on Linux / GitHub Pages).
  *
  * Roster includes sisters beyond the chapter spreadsheet summary; sheet fields
  * (e.g. class year, status, big/little) are merged in where they apply.
  */
 export const alphaIotaClassPage: SisterClassPageDef = {
-  heroImageFile: "alpha-iota-group.jpg",
+  heroImageFile: "alpha-iota-group.JPG",
   rushTerm: "Spring 2023",
   heroTitle: "Alpha Iota",
   members: [

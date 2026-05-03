@@ -2,10 +2,10 @@ import type { SisterClassPageDef } from "../types";
 
 /**
  * Portraits: `public/images/sisters/alpha-xi/<#>-firstname-lastname.*`
- * Hero: `alpha-xi-group.jpg` under `public/images/sisters/alpha-xi/`.
+ * Hero: match filename in `heroImageFile` exactly (`.JPG` vs `.jpg` matters on GitHub Pages).
  */
 export const alphaXiClassPage: SisterClassPageDef = {
-  heroImageFile: "alpha-xi-group.jpg",
+  heroImageFile: "alpha-xi-group.JPG",
   rushTerm: "Winter 2026",
   heroTitle: "Alpha Xi",
   members: [
